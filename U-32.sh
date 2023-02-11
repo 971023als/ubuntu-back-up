@@ -19,7 +19,7 @@ EOF
 BAR
 
 # Sendmail 서비스 재시작
-sudo service sendmail restart
+service sendmail restart
 
 # Sendmail이 실행 중인지 확인
 PID=$(ps -ef | grep sendmail | awk '{print $2}')

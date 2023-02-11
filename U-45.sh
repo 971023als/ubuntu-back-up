@@ -18,12 +18,12 @@ EOF
 BAR
 
 # su 명령에서 SUID 비트 제거
-sudo chmod u-s $(which su)
+chmod u-s $(which su)
 
 # su 명령에 대한 그룹 제한 제거
-sudo chgrp root $(which su)
-sudo chmod g+rwx $(which su)
-sudo chmod g-rxs $(which su)
+chgrp root $(which su)
+chmod g+rwx $(which su)
+chmod g-rxs $(which su)
 
 INFO "su 명령의 원래 상태가 복원되었습니다."
 

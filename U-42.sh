@@ -24,10 +24,10 @@ TMP1=`SCRIPTNAME`.log
 backup_file="/var/log/patch.log.backup"
 
 # 백업 파일 경로 설정
-sudo cp $log_file $backup_file
+cp $log_file $backup_file
 
 # 원래 상태로 복구
-sudo apt downgrade $(grep "Patches installed at" $backup_file | awk '{print $4, $5, $6}')
+apt downgrade $(grep "Patches installed at" $backup_file | awk '{print $4, $5, $6}')
 
 cat $result
 

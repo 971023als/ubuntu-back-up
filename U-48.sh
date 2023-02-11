@@ -28,7 +28,7 @@ BAR
 backup_file=$(ls -t /etc/login.defs_backup* | head -n 1)
 
 #    백업 파일 생성
-sudo cp "$backup_file" /etc/login.defs
+cp "$backup_file" /etc/login.defs
 
 INFO "Original file restored from $backup_file"
 

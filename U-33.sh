@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 
 # Start DNS service
-sudo service named start
+service named start
 
 
 cat $result

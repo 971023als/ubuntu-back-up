@@ -24,13 +24,13 @@ TMP1=`SCRIPTNAME`.log
 # Check if a backup file exists
 if [ -f /etc/apache2/apache2.conf.bak ]; then
   # Restore the backup file
-  sudo cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
+  cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
 else
   echo "Backup file not found. Please create a backup before running this script."
 fi
 
 # Restart Apache to apply the changes
-if ! sudo service apache2 restart; then
+if ! service apache2 restart; then
   echo "Apache could not be restarted. Please check the logs for more information."
 fi
 
