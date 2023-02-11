@@ -25,9 +25,6 @@ TMP1=`SCRIPTNAME`.log
 cp /etc/hosts.allow.bak /etc/hosts.allow
 cp /etc/hosts.deny.bak /etc/hosts.deny
 
-# Confirm the restore
-INFO "백업 파일이 복원되었습니다."
-
 cat $result
 
 echo ; echo

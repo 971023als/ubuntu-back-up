@@ -32,11 +32,11 @@ if [ -d "$backup_dir" ]; then
   done
 
   # 백업 디렉터리 제거
-  rm -rf "$backup_dir"
+  sudo rm -rf "$backup_dir"
 
-  echo "Files have been recovered and backup directory has been deleted."
-else
-  echo "Backup directory not found. No recovery possible."
+  INFO "파일이 복구되었으며 백업 디렉토리가 삭제되었습니다."
+else 
+  INFO "백업 디렉터리를 찾을 수 없습니다. 복구가 불가능합니다."
 fi
 
 cat $result

@@ -34,8 +34,6 @@ if ! sudo service apache2 restart; then
   echo "Apache could not be restarted. Please check the logs for more information."
 fi
 
-INFO "Apache configuration restored successfully."
-
 
 
 

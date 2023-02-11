@@ -22,11 +22,14 @@ BAR
 
 
 #    백업 파일 생성
+cp $HOME/.profile.bak $HOME/.profile
+cp $HOME/.kshrc.bak $HOME/.kshrc
+cp $HOME/.cshrc.bak $HOME/.cshrc
 cp $HOME/.bashrc.bak $HOME/.bashrc
 cp $HOME/.bash_profile.bak $HOME/.bash_profile
-cp $HOME/.bash_aliases.bak $HOME/.bash_aliases
-
-
+cp $HOME/.login.bak $HOME/.login
+cp $HOME/.exrc.bak $HOME/.exrc
+cp $HOME/.netrc.bak $HOME/.netrc
 
 
 cat $result

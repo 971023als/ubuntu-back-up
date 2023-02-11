@@ -16,6 +16,7 @@ EOF
 
 BAR
 
+# /etc/ssh/sshd_config 백업 파일 생성
 cp /etc/ssh/sshd_config.bak /etc/ssh/sshd_config
 
 cat $result

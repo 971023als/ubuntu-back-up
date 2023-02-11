@@ -17,7 +17,7 @@ EOF
 BAR
 
 #  /etc/inetd.conf  백업 파일 생성
-cp /etc/inetd.conf.bak /etc/inetd.conf
+cp /etc/xinetd.conf.bak /etc/xinetd.conf
 
 
 cat $result
