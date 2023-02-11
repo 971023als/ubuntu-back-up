@@ -21,8 +21,6 @@ BAR
 cp /etc/xinetd.d/finger.bak /etc/xinetd.d/finger
 
 
-
-
 cat $result
 
 echo ; echo

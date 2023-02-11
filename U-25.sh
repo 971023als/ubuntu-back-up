@@ -36,7 +36,6 @@ else
   INFO "NFS 서비스가 성공적으로 원래 상태로 복원되었습니다."
 fi
 
-
 cat $result
 
 echo ; echo

@@ -16,12 +16,10 @@ EOF
 
 BAR
 
-
 #    백업 파일 생성
 cp /etc/xinetd.d/tftp.bak /etc/xinetd.d/tftp
 cp /etc/xinetd.d/talk.bak /etc/xinetd.d/talk
 cp /etc/xinetd.d/ntalk.bak /etc/xinetd.d/ntalk
-
 
 cat $result
 

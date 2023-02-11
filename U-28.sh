@@ -16,20 +16,20 @@ EOF
 
 BAR
 
-sudo service ypserv start
-sudo update-rc.d ypserv enable
+service ypserv start
+update-rc.d ypserv enable
 
-sudo service ypbind start
-sudo update-rc.d ypbind enable
+service ypbind start
+update-rc.d ypbind enable
 
-sudo service ypxfrd start
-sudo update-rc.d ypxfrd enable
+service ypxfrd start
+update-rc.d ypxfrd enable
 
-sudo service rpc.yppasswdd start
-sudo update-rc.d rpc.yppasswdd enable
+service rpc.yppasswdd start
+update-rc.d rpc.yppasswdd enable
 
-sudo service rpc.ypupdated start
-sudo update-rc.d rpc.ypupdated enable
+service rpc.ypupdated start
+update-rc.d rpc.ypupdated enable
 
 cat $result
 

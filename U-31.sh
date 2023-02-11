@@ -16,9 +16,6 @@ EOF
 
 BAR
 
-
-
-
 #    백업 파일 생성
 cp /etc/mail/sendmail.cf.bak /etc/mail/sendmail.cf 
  

@@ -16,9 +16,9 @@ EOF
 
 BAR
 
-sudo service automountd start
+service automountd start
 
-sudo service automountd status
+service automountd status
 
 cat $result
 

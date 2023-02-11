@@ -34,7 +34,6 @@ else
   INFO "공유 백업 파일을 찾을 수 없습니다."
 fi
 
-# Start NFS services
 services=("nfsd" "statd" "mountd")
 
 for service in "${services[@]}"; do
@@ -55,7 +54,6 @@ fi
 /usr/sbin/nfsd restart
 /usr/sbin/statd restart
 /usr/sbin/lockd restart
-
 
 cat $result
 

@@ -24,7 +24,7 @@ EOF
 BAR
 
 # Sendmail 서비스 재시작
-sudo service sendmail restart
+service sendmail restart
 
 # Sendmail 서비스가 실행 중인지 확인합니다
 sendmail_status=$(ps -ef | grep sendmail | grep -v "grep")
