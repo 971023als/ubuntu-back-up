@@ -38,7 +38,6 @@ for file in "${files[@]}"; do
   cp "$file" "$file$prefix$current_time"
   # 백업이 성공적으로 생성되었음을 나타내는 메시지 표시
   OK "시스템이 성공적으로 백업되었습니다.: $file$prefix$current_time"
-
 done
 
 
