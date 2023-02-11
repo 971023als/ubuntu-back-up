@@ -24,8 +24,6 @@ TMP1=`SCRIPTNAME`.log
 cp /etc/vsftpd.conf.bak /etc/vsftpd.conf
 
 
-
-
 cat $result
 
 echo ; echo

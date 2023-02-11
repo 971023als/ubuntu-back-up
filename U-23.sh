@@ -24,8 +24,6 @@ cp /etc/xinetd.d/daytime.bak /etc/xinetd.d/daytime
 cp /etc/xinetd.d/chargen.bak /etc/xinetd.d/chargen
 
 
-
-
 cat $result
 
 echo ; echo

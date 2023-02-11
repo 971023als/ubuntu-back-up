@@ -20,6 +20,7 @@ EOF
 
 BAR
 
+
 #    백업 파일 생성
 cp $HOME/.profile.bak $HOME/.profile
 cp $HOME/.kshrc.bak $HOME/.kshrc

@@ -32,7 +32,7 @@ if [ -d "$backup_dir" ]; then
   done
 
   # 백업 디렉터리 제거
-  sudo rm -rf "$backup_dir"
+  rm -rf "$backup_dir"
 
   INFO "파일이 복구되었으며 백업 디렉토리가 삭제되었습니다."
 else 

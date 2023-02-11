@@ -22,9 +22,6 @@ cp /etc/xinetd.d/rsh.bak /etc/xinetd.d/rsh
 cp /etc/xinetd.d/rexec.bak /etc/xinetd.d/rexec
 
 
-
-
-
 cat $result
 
 echo ; echo
