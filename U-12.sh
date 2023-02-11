@@ -18,7 +18,7 @@ EOF
 
 BAR
 
-# Restore system-auth file
+#  /etc/services  백업 파일 생성
 cp /etc/services.bak /etc/services
 
 

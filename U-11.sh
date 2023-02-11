@@ -18,8 +18,8 @@ EOF
 
 BAR
 
-# Restore system-auth file
-cp xinetd.conf.bak xinetd.conf
+#  /etc/syslog.conf  백업 파일 생성
+cp /etc/syslog.conf.bak /etc/syslog.conf
 
 
 cat $result

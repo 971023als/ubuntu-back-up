@@ -25,7 +25,7 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1
 
-# Restore backup files
+#  백업 파일 생성
 cp /etc/hosts.lpd.bak /etc/hosts.lpd
 
 

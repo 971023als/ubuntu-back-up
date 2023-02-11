@@ -15,8 +15,8 @@ cat << EOF >> $result
 
 EOF
 
-# Restore system-auth file
-cp /etc/passwd.bak /etc/passwd 
+#  /etc/passwd  백업 파일 생성
+INFO "4번에서 /etc/passwd 백업 파일이 생성되었습니다."
 
 cat $result
 

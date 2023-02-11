@@ -1,9 +1,5 @@
 #!/bin/bash
 
- 
-
- 
-
 . function.sh
 
  
@@ -25,8 +21,9 @@ EOF
 
 BAR
 
-# Restore system-auth file
-cp /etc/passwd.bak /etc/passwd 
+# /etc/passwd 백업 파일 생성
+cp /etc/passwd.bak /etc/passwd
+# /etc/shadow  백업 파일 생성 
 cp /etc/shadow.bak /etc/shadow 
 
 cat $result

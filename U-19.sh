@@ -17,7 +17,7 @@ EOF
 BAR
 
 
-# Restore backup files
+#    백업 파일 생성
 cp /etc/xinetd.d/finger.bak /etc/xinetd.d/finger
 
 

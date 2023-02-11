@@ -24,7 +24,7 @@ EOF
 
 BAR
 
-# Restore backup files
+#    백업 파일 생성
 cp /etc/apache2/sites-available/000-default.conf.bak /etc/apache2/sites-available/000-default.conf
 
 # 확인할 Apache2 Document Root 디렉토리 설정

@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Confirm the restore
+#    백업 파일 생성
 INFO "35번에서 /etc/apache2/apache2.conf 백업 파일이 생성되었습니다."
 
 

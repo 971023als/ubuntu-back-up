@@ -26,26 +26,26 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1  
 
-# Restore Telnet configuration, if backed up
+#  백업 파일 생성
 if [ -d /etc/telnet.bak ]; then
     sudo rm -rf /etc/telnet
-    sudo mv /etc/telnet.bak /etc/telnet
+    sudo cp /etc/telnet.bak /etc/telnet
     sudo apt-get install telnet -y
 fi
 
-# Restore FTP configuration, if backed up
+#  백업 파일 생성
 if [ -d /etc/ftp.bak ]; then
     sudo rm -rf /etc/ftp
-    sudo mv /etc/ftp.bak /etc/ftp
+    sudo cp /etc/ftp.bak /etc/ftp
     sudo apt-get install ftp -y
 fi
 
 # Stop ssh service
 sudo service ssh stop
 
-# Restore ssh configuration
+#  백업 파일 생성
 sudo rm -rf /etc/ssh
-sudo mv /etc/ssh.bak /etc/ssh
+sudo cp /etc/ssh.bak /etc/ssh
 sudo apt-get install openssh-server -y
 
 cat $result

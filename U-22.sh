@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Restore backup files
+#    백업 파일 생성
 cp /etc/crontab.bak /etc/crontab
 cp /etc/cron.hourly.bak /etc/cron.hourly
 cp /etc/cron.daily.bak /etc/cron.daily
@@ -29,7 +29,6 @@ cp /etc/cron.monthly.bak /etc/cron.monthly
 cp /etc/cron.allow.bak /etc/cron.allow
 cp /etc/cron.deny.bak /etc/cron.deny
 cp /var/spool/cron/*.bak /var/spool/cron/*
-#cp /var/spool/cron/crontabs/*.bak /var/spool/cron/crontabs/*
 
 cat $result
 

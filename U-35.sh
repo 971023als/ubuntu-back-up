@@ -22,7 +22,7 @@ TMP1=`SCRIPTNAME`.log
 
 
 
-# Restore backup files
+#    백업 파일 생성
 cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
 
 

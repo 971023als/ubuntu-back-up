@@ -23,19 +23,19 @@ TMP1=`SCRIPTNAME`.log
 # Get the latest backup of the sulog file
 sulog_backup=$(ls -t /var/log/sulog_* | head -n 1)
 
-# Recover the sulog file from its backup
+#    백업 파일 생성
 cp $sulog_backup /var/log/sulog
 
 # Get the latest backup of the auth.log file
 auth_backup=$(ls -t /var/log/auth_* | head -n 1)
 
-# Recover the auth.log file from its backup
+#    백업 파일 생성
 cp $auth_backup /var/log/auth.log
 
 # Get the latest backup of the auth_logs file
 auth_logs_backup=$(ls -t /var/log/auth_logs_* | head -n 1)
 
-# Recover the auth_logs file from its backup
+#    백업 파일 생성
 cp $auth_logs_backup /var/log/auth_logs
 
 cat $result

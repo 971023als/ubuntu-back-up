@@ -27,7 +27,7 @@ BAR
 # Get the most recent backup file
 backup_file=$(ls -t /etc/login.defs_backup* | head -n 1)
 
-# Restore the original file from the backup
+#    백업 파일 생성
 sudo cp "$backup_file" /etc/login.defs
 
 INFO "Original file restored from $backup_file"

@@ -26,8 +26,8 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1
 
 
-# Restore backup files
-cp /etc/profile.bak /etc/profile
+#  /etc/profile  백업 파일 생성
+INFO "5번에서 /etc/profile 백업 파일이 생성되었습니다."
 
 
 

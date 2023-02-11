@@ -23,7 +23,7 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
 
-
+#  백업 파일 생성
 sudo cp /etc/snmp/snmpd.conf.bak /etc/snmp/snmpd.conf
 
 

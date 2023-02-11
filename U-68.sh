@@ -27,6 +27,7 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
 
+#  백업 파일 생성
 sudo cp /etc/motd.bak /etc/motd
 sudo cp /etc/issue.net.bak /etc/issue.net
 sudo cp /etc/vsftpd/vsftpd.conf.bak /etc/vsftpd/vsftpd.conf

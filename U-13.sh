@@ -18,7 +18,7 @@ EOF
 BAR
 
 
-# Restore system-auth file
+#    백업 파일 생성
 cp /bin/ping.bak /bin/ping 
 cp /usr/bin/passwd.bak /usr/bin/passwd 
 cp /usr/bin/sudo.bak /usr/bin/sudo 

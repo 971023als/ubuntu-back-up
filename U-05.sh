@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Restore system-auth file
+#  /etc/profile  백업 파일 생성
 cp /etc/profile.bak /etc/profile 
 cp ~/.profile.bak ~/.profile
 

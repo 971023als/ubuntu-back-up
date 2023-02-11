@@ -23,7 +23,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Restore system-auth file
+#    백업 파일 생성
 cp /etc/hosts.equiv.bak /etc/hosts.equiv
 cp $HOME/.rhosts.bak $HOME/.rhosts
 

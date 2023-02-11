@@ -16,8 +16,8 @@ EOF
 
 BAR
 
-# Restore system-auth file
-cp xinetd.conf.bak xinetd.conf
+#  /etc/inetd.conf  백업 파일 생성
+cp /etc/inetd.conf.bak /etc/inetd.conf
 
 
 cat $result

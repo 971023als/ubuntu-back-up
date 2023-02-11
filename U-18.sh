@@ -20,9 +20,10 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Restore backup files
-mv /etc/hosts.allow.bak /etc/hosts.allow
-mv /etc/hosts.deny.bak /etc/hosts.deny
+
+#    백업 파일 생성
+cp /etc/hosts.allow.bak /etc/hosts.allow
+cp /etc/hosts.deny.bak /etc/hosts.deny
 
 # Confirm the restore
 INFO "백업 파일이 복원되었습니다."

@@ -16,7 +16,7 @@ EOF
 
 BAR
 
-# Restore backup files
+#    백업 파일 생성
 cp /etc/xinetd.d/rlogin.bak /etc/xinetd.d/rlogin
 cp /etc/xinetd.d/rsh.bak /etc/xinetd.d/rsh
 cp /etc/xinetd.d/rexec.bak /etc/xinetd.d/rexec

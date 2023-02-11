@@ -24,7 +24,7 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
 
-# 원본 httpd.conf 백업
+# 원본 /etc/apache2/apache2.conf 백업
 cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
 
 

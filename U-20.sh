@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-
+#    백업 파일 생성
 cp /etc/vsftpd.conf.bak /etc/vsftpd.conf
 
 

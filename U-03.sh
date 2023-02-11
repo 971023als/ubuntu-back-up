@@ -20,7 +20,7 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# Restore system-auth file
+# /etc/pam.d/system-auth 백업 파일 생성
 cp /etc/pam.d/system-auth.bak /etc/pam.d/system-auth 
 
 cat $result
