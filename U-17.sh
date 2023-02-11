@@ -27,7 +27,6 @@ TMP1=`SCRIPTNAME`.log
 cp /etc/hosts.equiv.bak /etc/hosts.equiv
 cp $HOME/.rhosts.bak $HOME/.rhosts
 
-
 cat $result
 
 echo ; echo

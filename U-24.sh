@@ -34,26 +34,7 @@ else
   INFO "공유 백업 파일을 찾을 수 없습니다."
 fi
 
-services=("nfsd" "statd" "mountd")
 
-for service in "${services[@]}"; do
-  service "$service" start
-  if [ $? -eq 0 ]; then
-    INFO "$service 가 성공적으로 시작되었습니다."
-  else 
-    INFO "$service 를 시작하지 못했습니다."
-  fi
-done
-
-# 사용하지 않도록 설정된 NFS 시작 스크립트의 이름을 원래 이름으로 변경합니다
-if [ -f "/etc/rc.d/rc2.d/_S60nfs" ]; then
-sudo mv /etc/rc.d/rc2.d/_S60nfs /etc/rc.d/rc2.d/S60nfs
-fi
-
-# NFS 관련 프로세스 시작
-/usr/sbin/nfsd restart
-/usr/sbin/statd restart
-/usr/sbin/lockd restart
 
 cat $result
 

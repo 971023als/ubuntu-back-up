@@ -23,7 +23,6 @@ TMP1=`SCRIPTNAME`.log
 #  /etc/hosts  백업 파일 생성
 cp /etc/hosts.bak /etc/hosts
 
-
 cat $result
 
 echo ; echo

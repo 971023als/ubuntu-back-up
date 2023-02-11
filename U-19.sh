@@ -19,7 +19,6 @@ BAR
 #    백업 파일 생성
 cp /etc/xinetd.d/finger.bak /etc/xinetd.d/finger
 
-
 cat $result
 
 echo ; echo

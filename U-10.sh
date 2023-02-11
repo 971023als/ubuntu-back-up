@@ -19,7 +19,6 @@ BAR
 #  /etc/inetd.conf  백업 파일 생성
 cp /etc/xinetd.conf.bak /etc/xinetd.conf
 
-
 cat $result
 
 echo ; echo

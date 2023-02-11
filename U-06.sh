@@ -20,7 +20,6 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-
 backup_dir="./backup_nouser_nogroup"
 
 # 백업 디렉터리가 있는지 확인
@@ -30,7 +29,7 @@ if [ -d "$backup_dir" ]; then
     original_file="$(echo "$file" | sed "s|$backup_dir||")"
     cp -R "$file" "$original_file"
   done
-
+  
   # 백업 디렉터리 제거
   rm -rf "$backup_dir"
 

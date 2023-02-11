@@ -21,13 +21,6 @@ BAR
 # Sendmail 서비스 재시작
 service sendmail restart
 
-# Sendmail이 실행 중인지 확인
-PID=$(ps -ef | grep sendmail | awk '{print $2}')
-if [ -z "$PID" ]; then
-  INFO "메일 보내기 서비스를 시작할 수 없습니다."
-else
-  OK "Sendmail 서비스가 PID: $PID 로 시작되었습니다."
-fi
 
 cat $result
 

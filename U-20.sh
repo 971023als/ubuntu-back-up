@@ -23,7 +23,6 @@ TMP1=`SCRIPTNAME`.log
 #    백업 파일 생성
 cp /etc/vsftpd.conf.bak /etc/vsftpd.conf
 
-
 cat $result
 
 echo ; echo

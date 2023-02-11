@@ -16,7 +16,6 @@ EOF
 
 BAR
 
-
 #    백업 파일 생성
 cp /etc/xinetd.d/echo.bak /etc/xinetd.d/echo
 cp /etc/xinetd.d/discard.bak /etc/xinetd.d/discard

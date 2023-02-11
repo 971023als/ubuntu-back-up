@@ -26,7 +26,6 @@ TMP1=`SCRIPTNAME`.log
 cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
 
 
-
 cat $result
 
 echo ; echo

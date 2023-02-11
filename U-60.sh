@@ -29,6 +29,7 @@ cp /etc/ftp.bak /etc/ftp
 #  백업 파일 생성
 cp /etc/ssh.bak /etc/ssh
 
+
 cat $result
 
 echo ; echo 
