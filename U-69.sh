@@ -27,7 +27,7 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1 
 
 #  백업 파일 생성
-sudo cp /etc/exports.bak /etc/exports
+cp /etc/exports.bak /etc/exports
 
 
 cat $result

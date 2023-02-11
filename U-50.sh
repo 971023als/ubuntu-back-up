@@ -32,8 +32,6 @@ else
   WARN "백업 파일을 찾을 수 없습니다. 시스템을 복원할 수 없습니다."
 fi
 
- 
-
 cat $result
 
 echo ; echo

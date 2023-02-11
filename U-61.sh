@@ -25,16 +25,16 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1   
 
 # Start the vsftpd service
-sudo service vsftpd start
+service vsftpd start
 
 # Enable vsftpd service startup on boot
-sudo /etc/rc.d/init.d/vsftpd start
+/etc/rc.d/init.d/vsftpd start
 
 # Start the proftp service
-sudo service proftp start
+service proftp start
 
 # Enable proftp service startup on boot
-sudo /etc/rc.d/init.d/proftp start
+/etc/rc.d/init.d/proftp start
 
 cat $result
 

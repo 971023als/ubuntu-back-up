@@ -25,9 +25,9 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1 
 
 #  백업 파일 생성
-sudo cp /usr/bin/at.bak /usr/bin/at
+cp /usr/bin/at.bak /usr/bin/at
 #  백업 파일 생성
-sudo cp /etc/at.deny.bak /etc/at.deny
+cp /etc/at.deny.bak /etc/at.deny
 
 
 cat $result

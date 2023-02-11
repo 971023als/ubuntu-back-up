@@ -35,7 +35,6 @@ else
   OK "UMASK가 /etc/profile에 이미 있습니다."
 fi
 
-
 cat $result
 
 echo ; echo 

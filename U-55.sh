@@ -28,7 +28,6 @@ TMP1=`SCRIPTNAME`.log
 #  백업 파일 생성
 cp /etc/hosts.lpd.bak /etc/hosts.lpd
 
-
 cat $result
 
 echo ; echo

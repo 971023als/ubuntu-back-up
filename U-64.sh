@@ -32,10 +32,10 @@ fi
 
 if [ "$(id -u)" == "0" ]; then
   if [ "$(grep "^ftp" /etc/passwd | cut -d: -f1)" == "root" ]; then
-    sudo usermod -s /usr/sbin/nologin root
+    usermod -s /usr/sbin/nologin root
     OK "루트 FTP 액세스가 비활성화되었습니다."
   fi
-  sudo usermod -s /bin/false $ftp_user
+  usermod -s /bin/false $ftp_user
   OK "FTP 액세스가 $ftp_user 계정으로 제한되었습니다."
 else
   WARN "루트로 실행해야 합니다."

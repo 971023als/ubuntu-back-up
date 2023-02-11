@@ -1,11 +1,6 @@
 #!/bin/bash
 
- 
-
 . function.sh
-
-  
- 
 
 BAR
 
@@ -21,32 +16,18 @@ EOF
 
 BAR
 
-
 TMP1=`SCRIPTNAME`.log
 
 > $TMP1  
 
 #  백업 파일 생성
-if [ -d /etc/telnet.bak ]; then
-    sudo rm -rf /etc/telnet
-    sudo cp /etc/telnet.bak /etc/telnet
-    sudo apt-get install telnet -y
-fi
+cp /etc/telnet.bak /etc/telnet
+
+#  백업 파일 생성  
+cp /etc/ftp.bak /etc/ftp
 
 #  백업 파일 생성
-if [ -d /etc/ftp.bak ]; then
-    sudo rm -rf /etc/ftp
-    sudo cp /etc/ftp.bak /etc/ftp
-    sudo apt-get install ftp -y
-fi
-
-# Stop ssh service
-sudo service ssh stop
-
-#  백업 파일 생성
-sudo rm -rf /etc/ssh
-sudo cp /etc/ssh.bak /etc/ssh
-sudo apt-get install openssh-server -y
+cp /etc/ssh.bak /etc/ssh
 
 cat $result
 

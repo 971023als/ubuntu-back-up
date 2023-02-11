@@ -28,8 +28,6 @@ TMP1=`SCRIPTNAME`.log
 #  백업 파일 생성
 cp /etc/vsftpd/ftpusers.bak /etc/vsftpd/ftpusers
 
-
-
 cat $result
 
 echo ; echo 

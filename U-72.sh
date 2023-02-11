@@ -28,7 +28,6 @@ TMP1=`SCRIPTNAME`.log
 cp /etc/rsyslog.conf.bak /etc/rsyslog.conf
 
 
-
 cat $result
 
 echo ; echo 
