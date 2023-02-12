@@ -25,7 +25,7 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1
 
 #  백업 파일 생성
-cp /etc/profile.bak /etc/profile
+INFO "5번에서 백업 파일이 생성되었습니다."
 
 cat $result
 
