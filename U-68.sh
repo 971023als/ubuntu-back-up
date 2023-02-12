@@ -30,10 +30,12 @@ TMP1=`SCRIPTNAME`.log
 #  백업 파일 생성
 cp /etc/motd.bak /etc/motd
 cp /etc/issue.net.bak /etc/issue.net
-cp /etc/vsftpd/vsftpd.conf.bak /etc/vsftpd/vsftpd.conf
 
 #  백업 파일 생성
-INFO "31번에서 백업 파일이 생성되었습니다."
+INFO "63번에서 /etc/vsftpd/ftpusers 백업 파일이 생성되었습니다."
+
+#  백업 파일 생성
+INFO "31번에서 /etc/mail/sendmail.cf 백업 파일이 생성되었습니다."
 
 cp /etc/named.conf.bak /etc/named.conf
 
