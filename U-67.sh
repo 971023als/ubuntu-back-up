@@ -26,7 +26,6 @@ TMP1=`SCRIPTNAME`.log
 #  백업 파일 생성
 INFO "66번에서 백업 파일이 생성되었습니다."
 
-
 cat $result
 
 echo ; echo 
