@@ -34,7 +34,6 @@ cp $HOME/.login.bak $HOME/.login
 cp $HOME/.exrc.bak $HOME/.exrc
 cp $HOME/.netrc.bak $HOME/.netrc
 
-
 cat $result
 
 echo ; echo

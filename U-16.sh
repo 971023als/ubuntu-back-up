@@ -21,15 +21,11 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# 주 번호 또는 부 번호가 없는 /dev 디렉토리에서 파일 찾기
-find /dev -type f -exec ls -l {} \; | awk '$5 == "0" && $6 == "0" {print $9}' |
-while read file; do
-    # 삭제하기 전에 확인
-    read -p "Delete $file? [y/n] " confirm
-    if [ "$confirm" == "y" ]; then
-        rm -f "$file"
-    fi
-done
+# Get the latest backup of the auth_logs file
+auth_logs_backup=$(find /dev -type f -exec ls -l {} \;)
+
+#    백업 파일 생성
+cp $auth_logs_backup.bak $auth_logs_backup
  
 cat $result
 

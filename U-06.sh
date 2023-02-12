@@ -29,10 +29,9 @@ if [ -d "$backup_dir" ]; then
     original_file="$(echo "$file" | sed "s|$backup_dir||")"
     cp -R "$file" "$original_file"
   done
-
-  INFO "파일이 복구되었으며 백업 디렉토리가 삭제되었습니다."
+  INFO "파일이 복구 완료."
 else 
-  INFO "백업 디렉터리를 찾을 수 없습니다. 복구가 불가능합니다."
+  INFO "백업 디렉터리를 찾을 수 없음."
 fi
 
 cat $result
