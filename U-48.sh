@@ -1,14 +1,7 @@
 #!/bin/bash
 
  
-
 . function.sh
-
-TMP1=`SCRIPTNAME`.log
-
-> $TMP1
-
- 
 
 BAR
 
@@ -23,6 +16,10 @@ cat << EOF >> $result
 EOF
 
 BAR
+
+TMP1=`SCRIPTNAME`.log
+
+> $TMP1
 
 #  백업 파일 생성
 INFO "2번에서 /etc/login.defs 백업 파일이 생성되었습니다."

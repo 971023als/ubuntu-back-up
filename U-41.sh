@@ -1,15 +1,7 @@
 #!/bin/bash
 
- 
-
 . function.sh
-
  
-TMP1=`SCRIPTNAME`.log
-
-> $TMP1 
- 
-
 BAR
 
 CODE [U-41] Apache 웹 서비스 영역의 분리 
@@ -24,10 +16,13 @@ EOF
 
 BAR
 
+ 
+TMP1=`SCRIPTNAME`.log
+
+> $TMP1 
+
 #    백업 파일 생성
 cp /etc/apache2/sites-available/000-default.conf.bak /etc/apache2/sites-available/000-default.conf
-
-
 
 cat $result
 

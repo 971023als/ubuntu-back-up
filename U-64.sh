@@ -27,7 +27,6 @@ TMP1=`SCRIPTNAME`.log
 INFO "4번에서 /etc/passwd 백업 파일이 생성되었습니다."
 
 
-
 cat $result
 
 echo ; echo 

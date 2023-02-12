@@ -1,10 +1,8 @@
 #!/bin/bash
 
- 
 
 . function.sh
  
-
 BAR
 
 CODE [U-71] Apache 웹서비스 정보 숨김

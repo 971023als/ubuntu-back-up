@@ -4,9 +4,6 @@
 
 . function.sh
 
-
- 
-
 BAR
 
 CODE [U-49] 불필요한 계정 제거

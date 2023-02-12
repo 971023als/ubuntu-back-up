@@ -22,11 +22,11 @@ hidden_files=$(sudo find / -type f -name ".*" ! -path "/run/user/1000/gvfs/*")
 #    백업 파일 생성
 cp $hidden_files.bak $hidden_files
 
+
 hidden_dirs=$(sudo find / -type d -name ".*" ! -path "/run/user/1000/gvfs/*")
 
 #    백업 파일 생성
 cp $hidden_dirs.bak $hidden_dirs
-
 
 cat $result
 

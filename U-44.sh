@@ -16,6 +16,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+> $TMP1
+
 # 현재 날짜 및 시간 저장
 current_date_time=$(date +"%Y-%m-%d %T")
 
@@ -29,7 +33,6 @@ if [ -f "$backup_file_name" ]; then
 else
   OK "백업 파일을 찾을 수 없습니다."
 fi
-
 
 cat $result
 

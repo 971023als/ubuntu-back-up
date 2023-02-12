@@ -2,7 +2,6 @@
 
 . function.sh
 
-
 BAR
 
 CODE [U-16] /dev에 존재하지 않는 device 파일 점검

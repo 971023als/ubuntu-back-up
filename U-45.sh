@@ -17,6 +17,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+> $TMP1
+
 INFO "SUID 비트 제거는 조치 45번 진행하시길 바랍니다."
 
 cat $result

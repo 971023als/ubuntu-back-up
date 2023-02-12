@@ -2,7 +2,6 @@
 
 . function.sh
 
-
 BAR
 
 CODE [U-54] Session Timeout 설정

@@ -4,7 +4,6 @@
 
 . function.sh
  
-
 BAR
 
 CODE [U-63] ftpusers 파일 소유자 및 권한 설정
@@ -23,7 +22,6 @@ BAR
 TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
-
 
 #  백업 파일 생성
 cp /etc/vsftpd/ftpusers.bak /etc/vsftpd/ftpusers

@@ -1,13 +1,6 @@
 #!/bin/bash
 
- 
-
 . function.sh
-
- 
-TMP1=`SCRIPTNAME`.log
-
-> $TMP1
 
 BAR
 
@@ -22,6 +15,10 @@ cat << EOF >> $result
 EOF
 
 BAR
+
+TMP1=`SCRIPTNAME`.log
+
+> $TMP1
 
 #  서비스 관련 파일
 INFO "서비스 관련 파일이라 조치 30번 진행하시면 됩니다."

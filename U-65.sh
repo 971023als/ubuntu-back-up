@@ -4,8 +4,6 @@
 
 . function.sh
 
- 
-
 BAR
 
 CODE [U-65] at 파일 소유자 및 권한 설정
@@ -28,7 +26,6 @@ TMP1=`SCRIPTNAME`.log
 cp /usr/bin/at.bak /usr/bin/at
 #  백업 파일 생성
 cp /etc/at.deny.bak /etc/at.deny
-
 
 cat $result
 

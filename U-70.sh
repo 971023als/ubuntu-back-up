@@ -4,8 +4,6 @@
 
 . function.sh
 
- 
-
 BAR
 
 CODE [U-70] expn, vrfy 명령어 제한

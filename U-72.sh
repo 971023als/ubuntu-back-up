@@ -44,8 +44,6 @@ cp /etc/httpd/conf/httpd.conf.bak /etc/httpd/conf/httpd.conf
 #  백업 파일 생성
 cp /etc/audit/auditd.conf.bak /etc/audit/auditd.conf
 
-
-
 cat $result
 
 echo ; echo 
