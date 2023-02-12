@@ -19,7 +19,6 @@ EOF
 
 BAR
 
-
 #  백업 파일 생성
 cp /etc/snmp/snmpd.conf.bak /etc/snmp/snmpd.conf
 

@@ -23,7 +23,6 @@ BAR
 #  백업 파일 생성
 cp /etc/rc2.d/S88sendmail_bak /etc/rc2.d/S88sendmail
   
-
 cat $result
 
 echo ; echo 

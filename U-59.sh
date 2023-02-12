@@ -18,25 +18,14 @@ BAR
 
 # 숨김 파일 및 디렉토리 정의
 hidden_files=$(sudo find / -type f -name ".*" ! -path "/run/user/1000/gvfs/*")
+
+#    백업 파일 생성
+cp $hidden_files.bak $hidden_files
+
 hidden_dirs=$(sudo find / -type d -name ".*" ! -path "/run/user/1000/gvfs/*")
 
-# 원치 않거나 의심스러운 파일이나 디렉토리가 있는지 확인
-for file in $hidden_files; do
-  if [[ $(basename $file) =~ "unwanted-file" ]]; then
-    echo "Found unwanted file: $file"
-     # 파일 삭제 또는 알림 전송과 같은 원하는 작업을 수행합니다.
-    rm $file
-  fi
-done
-
-for dir in $hidden_dirs; do
-  if [[ $(basename $dir) =~ "suspicious-dir" ]]; then
-    echo "Found suspicious directory: $dir"
-    # 디렉터리 삭제 또는 알림 전송과 같은 원하는 작업을 수행합니다.
-    rm -r $dir
-  fi
-done
-
+#    백업 파일 생성
+cp $hidden_dirs.bak $hidden_dirs
 
 
 cat $result

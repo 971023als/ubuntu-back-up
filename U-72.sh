@@ -21,7 +21,29 @@ TMP1=`SCRIPTNAME`.log
 > $TMP1 
 
 #  백업 파일 생성
+cp /var/log/secure.bak /var/log/secure
+
+#  백업 파일 생성
+cp /var/log/message.bak /var/log/message
+
+#  백업 파일 생성
+cp /var/log/audit/audit.log.bak /var/log/audit/audit.log
+
+#  백업 파일 생성
+cp /var/log/httpd/access_log.bak /var/log/httpd/access_log
+
+#  백업 파일 생성
+cp /var/log/httpd/error_log.bak /var/log/httpd/error_log
+
+#  백업 파일 생성
 cp /etc/rsyslog.conf.bak /etc/rsyslog.conf
+
+#  백업 파일 생성
+cp /etc/httpd/conf/httpd.conf.bak /etc/httpd/conf/httpd.conf
+
+#  백업 파일 생성
+cp /etc/audit/auditd.conf.bak /etc/audit/auditd.conf
+
 
 
 cat $result
