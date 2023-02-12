@@ -24,11 +24,9 @@ EOF
 
 BAR
 
-# Get the most recent backup file
-backup_file=$(ls -t /etc/login.defs_backup* | head -n 1)
+#  백업 파일 생성
+INFO "2번에서 /etc/login.defs 백업 파일이 생성되었습니다."
 
-#    백업 파일 생성
-cp "$backup_file" /etc/login.defs
 
 cat $result
 

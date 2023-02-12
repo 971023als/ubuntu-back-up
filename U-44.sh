@@ -16,28 +16,18 @@ EOF
 
 BAR
 
-# Save Current Date and Time
+# 현재 날짜 및 시간 저장
 current_date_time=$(date +"%Y-%m-%d %T")
 
 # Get the backup file name
 backup_file_name=`ls /etc/passwd_* | tail -n 1`
 
-# Check if the backup file exists
+# 백업 파일 이름 가져오기
 if [ -f "$backup_file_name" ]; then
-  # Restore the /etc/passwd file from the backup
+  # 백업에서 /etc/passwd 파일 복원
   cp $backup_file_name /etc/passwd
-
-  # Get the username of the account with the same UID as the root account
-  username=$(awk -F: '$3==0{print $1}' /etc/passwd)
-
-  if [ -n "$username" ]; then
-    # Reset the UID of the account to 0
-    usermod -u 0 $username
-  else
-    OK "An account with the same UID as the root account cannot be found"
-  fi
 else
-  OK "Backup file not found"
+  OK "백업 파일을 찾을 수 없습니다."
 fi
 
 

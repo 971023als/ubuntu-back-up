@@ -20,6 +20,9 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
+# 로그 파일 경로 설정
+log_file="/var/log/patch.log"
+
 # 백업 파일 경로 설정
 backup_file="/var/log/patch.log.backup"
 
