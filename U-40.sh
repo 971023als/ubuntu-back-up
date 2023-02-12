@@ -20,22 +20,8 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-
-# Check if a backup file exists
-if [ -f /etc/apache2/apache2.conf.bak ]; then
-  # Restore the backup file
-  cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
-else
-  echo "Backup file not found. Please create a backup before running this script."
-fi
-
-# Restart Apache to apply the changes
-if ! service apache2 restart; then
-  echo "Apache could not be restarted. Please check the logs for more information."
-fi
-
-
-
+#    백업 파일 생성
+INFO "35번에서 /etc/apache2/apache2.conf 백업 파일이 생성되었습니다."
 
 
 

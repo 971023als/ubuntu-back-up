@@ -23,17 +23,8 @@ EOF
 
 BAR
 
-# Sendmail 서비스 재시작
-service sendmail restart
-
-# Sendmail 서비스가 실행 중인지 확인합니다
-sendmail_status=$(ps -ef | grep sendmail | grep -v "grep")
-
-if [ "$sendmail_status" == "active" ]; then
-  INFO "Sendmail 서비스가 실행 중입니다."
-else
-  OK "Sendmail 서비스가 실행되고 있지 않습니다."
-fi
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 30번 진행하시면 됩니다."
 
 cat $result
 

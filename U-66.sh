@@ -23,9 +23,6 @@ BAR
 #  백업 파일 생성
 cp /etc/snmp/snmpd.conf.bak /etc/snmp/snmpd.conf
 
-# Start the snmpd service
-service snmpd start
-
 cat $result
 
 echo ; echo

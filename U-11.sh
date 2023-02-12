@@ -18,6 +18,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 #  /etc/syslog.conf  백업 파일 생성
 cp /etc/syslog.conf.bak /etc/syslog.conf
 

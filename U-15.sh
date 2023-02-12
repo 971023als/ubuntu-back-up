@@ -20,7 +20,8 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-find / -type f -perm 755 -exec chmod 777 {} \;
+#  권한 관련 파일
+INFO "권한 관련 파일이라 조치 15번 진행하시면 됩니다."
 
 cat $result
 

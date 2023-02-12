@@ -18,8 +18,8 @@ EOF
 
 BAR
 
-# Sendmail 서비스 재시작
-service sendmail restart
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 32번 진행하시면 됩니다."
 
 
 cat $result

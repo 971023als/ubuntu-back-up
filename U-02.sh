@@ -2,9 +2,6 @@
 
 . function.sh
 
-TMP1=$(SCRIPTNAME).log
-
-> $TMP1
  
 BAR
 
@@ -19,6 +16,10 @@ cat << EOF >> $result
 EOF
 
 BAR
+
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
 
 # 백업할 원본 파일 배열 설정
 files=("/etc/login.defs" "/etc/pam.d/common-auth")

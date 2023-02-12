@@ -18,16 +18,12 @@ EOF
 
 BAR
 
-# NFS 서비스 시작
-service nfs start
+TMP1=`SCRIPTNAME`.log
 
-# NFS 서비스의 상태를 확인합니다
-service nfs status
+>$TMP1  
 
-mount 192.168.0.100:/nfs_share /mnt/nfs
-
-# NFS 공유에 액세스하여 NFS 공유가 올바르게 마운트되었는지 확인합니다
-ls /mnt/nfs
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 25번 진행하시면 됩니다."
 
 
 cat $result

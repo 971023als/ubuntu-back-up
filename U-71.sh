@@ -24,8 +24,8 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
 
-# 원본 /etc/apache2/apache2.conf 백업
-cp /etc/apache2/apache2.conf.bak /etc/apache2/apache2.conf
+#    백업 파일 생성
+INFO "35번에서 /etc/apache2/apache2.conf 백업 파일이 생성되었습니다."
 
 
 cat $result

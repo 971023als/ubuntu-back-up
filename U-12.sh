@@ -18,9 +18,12 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 #  /etc/services  백업 파일 생성
 cp /etc/services.bak /etc/services
-
 
 cat $result
 

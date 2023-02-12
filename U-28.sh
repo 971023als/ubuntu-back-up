@@ -16,20 +16,12 @@ EOF
 
 BAR
 
-service ypserv start
-update-rc.d ypserv enable
+TMP1=`SCRIPTNAME`.log
 
-service ypbind start
-update-rc.d ypbind enable
+>$TMP1  
 
-service ypxfrd start
-update-rc.d ypxfrd enable
-
-service rpc.yppasswdd start
-update-rc.d rpc.yppasswdd enable
-
-service rpc.ypupdated start
-update-rc.d rpc.ypupdated enable
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 28번 진행하시면 됩니다."
 
 cat $result
 

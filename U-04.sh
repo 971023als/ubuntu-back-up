@@ -2,11 +2,6 @@
 
 . function.sh
 
- 
- TMP1=`SCRIPTNAME`.log
-
-> $TMP1
-
 BAR
 
 CODE [U-04] 패스워드 파일 보호
@@ -20,6 +15,10 @@ cat << EOF >> $result
 EOF
 
 BAR
+
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
 
 # /etc/passwd 백업 파일 생성
 cp /etc/passwd.bak /etc/passwd

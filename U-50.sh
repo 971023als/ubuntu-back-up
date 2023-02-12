@@ -20,17 +20,8 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1
 
-# 백업 파일이 있는지 확인하십시오
-if [ -f "/path/to/backup/etc_passwd_backup" ]; then
-  # /etc/passwd 파일의 백업 복원
-  cp /path/to/backup/etc_passwd_backup /etc/passwd
-  # /etc/passwd 파일에 대한 올바른 사용 권한 설정
-  chmod 644 /etc/passwd
-  chown root:root /etc/passwd
-  OK "시스템이 성공적으로 원래 상태로 복원되었습니다."
-else
-  WARN "백업 파일을 찾을 수 없습니다. 시스템을 복원할 수 없습니다."
-fi
+#  /etc/passwd  백업 파일 생성
+INFO "4번에서 /etc/passwd 백업 파일이 생성되었습니다."
 
 cat $result
 

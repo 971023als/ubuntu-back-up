@@ -16,6 +16,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 # NFS 서비스가 설치되어 있는지 확인합니다
 if ! command -v nfsd &> /dev/null; then
   INFO "NFS 서비스가 설치되지 않았습니다. 복원을 중단하는 중입니다."
@@ -33,8 +37,6 @@ elif [ -f "/etc/exports.bak" ]; then
 else
   INFO "공유 백업 파일을 찾을 수 없습니다."
 fi
-
-
 
 cat $result
 

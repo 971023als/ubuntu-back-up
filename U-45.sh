@@ -17,15 +17,7 @@ EOF
 
 BAR
 
-# su 명령에서 SUID 비트 제거
-chmod u-s $(which su)
-
-# su 명령에 대한 그룹 제한 제거
-chgrp root $(which su)
-chmod g+rwx $(which su)
-chmod g-rxs $(which su)
-
-INFO "su 명령의 원래 상태가 복원되었습니다."
+INFO "SUID 비트 제거는 조치 45번 진행하시길 바랍니다."
 
 cat $result
 

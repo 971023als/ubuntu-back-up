@@ -16,6 +16,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 # /etc/ssh/sshd_config 백업 파일 생성
 cp /etc/ssh/sshd_config.bak /etc/ssh/sshd_config
 

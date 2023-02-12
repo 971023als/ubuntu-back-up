@@ -23,23 +23,8 @@ TMP1=`SCRIPTNAME`.log
 
 > $TMP1 
 
-
-ftp_user="ftpuser"
-
-if ! grep "^$ftp_user" /etc/passwd > /dev/null 2>&1; then
-  sudo useradd $ftp_user
-fi
-
-if [ "$(id -u)" == "0" ]; then
-  if [ "$(grep "^ftp" /etc/passwd | cut -d: -f1)" == "root" ]; then
-    usermod -s /usr/sbin/nologin root
-    OK "루트 FTP 액세스가 비활성화되었습니다."
-  fi
-  usermod -s /bin/false $ftp_user
-  OK "FTP 액세스가 $ftp_user 계정으로 제한되었습니다."
-else
-  WARN "루트로 실행해야 합니다."
-fi
+#  /etc/passwd  백업 파일 생성
+INFO "4번에서 /etc/passwd 백업 파일이 생성되었습니다."
 
 
 

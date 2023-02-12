@@ -16,6 +16,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 #  /etc/shadow  백업 파일 생성
 INFO "4번에서 /etc/shadow 백업 파일이 생성되었습니다."
 

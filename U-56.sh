@@ -27,14 +27,6 @@ TMP1=`SCRIPTNAME`.log
 #  백업 파일 생성
 cp /etc/profile.bak /etc/profile
 
-# /etc/profile에 UMASK 추가(존재하지 않는 경우)
-if ! grep -q "UMASK=022" /etc/profile; then
-  echo "UMASK=022" >> /etc/profile
-  INFO "UMASK가 /etc/profile에 추가되었습니다."
-else
-  OK "UMASK가 /etc/profile에 이미 있습니다."
-fi
-
 cat $result
 
 echo ; echo 

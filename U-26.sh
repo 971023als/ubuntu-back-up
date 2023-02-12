@@ -16,9 +16,12 @@ EOF
 
 BAR
 
-service automountd start
+TMP1=`SCRIPTNAME`.log
 
-service automountd status
+>$TMP1  
+
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 26번 진행하시면 됩니다."
 
 cat $result
 

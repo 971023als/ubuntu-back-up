@@ -22,9 +22,7 @@ BAR
 
 #  백업 파일 생성
 cp /etc/rc2.d/S88sendmail_bak /etc/rc2.d/S88sendmail
-
-# 메일 보내기 서비스 시작
-service sendmail restart   
+  
 
 cat $result
 

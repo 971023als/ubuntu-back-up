@@ -19,8 +19,8 @@ TMP1=`SCRIPTNAME`.log
 >$TMP1  
 
 
-# Start DNS service
-service named start
+#  서비스 관련 파일
+INFO "서비스 관련 파일이라 조치 33번 진행하시면 됩니다."
 
 
 cat $result

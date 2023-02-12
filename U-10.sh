@@ -16,6 +16,10 @@ EOF
 
 BAR
 
+TMP1=`SCRIPTNAME`.log
+
+>$TMP1  
+
 #  /etc/inetd.conf  백업 파일 생성
 cp /etc/xinetd.conf.bak /etc/xinetd.conf
 

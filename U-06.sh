@@ -29,9 +29,6 @@ if [ -d "$backup_dir" ]; then
     original_file="$(echo "$file" | sed "s|$backup_dir||")"
     cp -R "$file" "$original_file"
   done
-  
-  # 백업 디렉터리 제거
-  rm -rf "$backup_dir"
 
   INFO "파일이 복구되었으며 백업 디렉토리가 삭제되었습니다."
 else 
