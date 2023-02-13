@@ -20,16 +20,12 @@ TMP1=`SCRIPTNAME`.log
 
 >$TMP1  
 
-# dfstab 또는 내보내기에서 공유 복원
-if [ -f "/etc/dfs/dfstab.bak" ]; then
-  cp "/etc/dfs/dfstab.bak" "/etc/dfs/dfstab"
-  INFO "/etc/dfs/dfstab에서 복원된 공유"
-elif [ -f "/etc/exports.bak" ]; then
-  cp "/etc/exports.bak" "/etc/exports"
-  INFO "/etc/exports에서 복원된 공유."
-else
-  INFO "공유 백업 파일을 찾을 수 없습니다."
-fi
+# Backup NFS configuration files
+cp /etc/dfs/dfstab /etc/dfs/dfstab.bak
+cp /etc/exports /etc/exports.bak
+
+# Restore the NFS service
+cp /etc/rc.d/rc2.d/_S60nfs /etc/rc.d/rc2.d/S60nfs
 
 cat $result
 
