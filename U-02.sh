@@ -22,7 +22,7 @@ TMP1=`SCRIPTNAME`.log
 >$TMP1  
 
 #  /etc/passwd  백업 파일 생성
-INFO "백업 2번에서 조치 되었습니다."
+INFO "백업 2번에서 진행하십시오."
 
 cat $result
 
